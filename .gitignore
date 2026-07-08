@@ -1,3 +1,13 @@
 .DS_Store
 .claude/settings.local.json
+.claude/scheduled_tasks.lock
 node_modules/
+
+.venv/
+__pycache__/
+*.pyc
+*.pt
+*.pt.*.partial
+
+assets/outputs/
+telemetry_history.csv
