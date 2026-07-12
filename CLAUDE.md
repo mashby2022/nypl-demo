@@ -1,10 +1,11 @@
+This is the instruction file we gave our AI coding agent while building this demo. It's part of the resource: read it to see how the project was steered in plain language.
+
 # NYC Wildlife CV Project Rules
 
 ## Build & Run Commands
-- Install: pip install -r requirements.txt
-- Seed Data: python seed_assets.py
-- Run Demo: python app.py
-- Mock Data: python mock_telemetry.py
+- Install: `pip install -r requirements.txt`
+- Run Demo: `python app.py`
+- Mock Data: `python mock_telemetry.py`
 
 ## Architectural Constraints
 - Mapping: bird->'NATIVE: Pigeon', cat/dog->'NATIVE: Squirrel (Proxy)', mouse->'ALERT: Rat'

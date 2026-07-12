@@ -22,6 +22,22 @@ print("[SYSTEM] Booting Vision Engine...")
 engine = VisionEngine(DOMAIN_CONFIG)
 
 
+def load_dotenv(path=".env"):
+    """Load simple KEY=VALUE settings without adding a runtime dependency."""
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as env_file:
+        for line in env_file:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+load_dotenv()
+
+
 class DatasetSearchRequest(BaseModel):
     query: str
 
