@@ -21,6 +21,8 @@ This kind of semantic mapping is a legitimate rapid-prototyping technique: it le
 
 The included subway-rat image is intentionally useful evidence of that boundary. When you run the base command-line pipeline, expect it to produce **zero `mouse` detections**: the unmodified COCO model does not treat a real rodent as its `mouse` class. The browser dashboard includes an optional manual alert override for demonstration; `app.py` does not.
 
+The squirrel sample makes the same point from a different angle: run it through the base pipeline and expect **zero `NATIVE: Squirrel (Proxy)` detections** too. COCO has no squirrel class at all, and this particular photo doesn't clear the app's 0.40 confidence threshold on `cat`/`dog` either — the only thing you'll see flagged is the privacy mask over the passerby's hand in frame. Both "failures" are the model behaving exactly as documented, not a bug in this repo.
+
 ## Run it yourself
 
 You need Python 3.10, 3.11, or 3.12. A GPU is not required. On the first run, Ultralytics automatically downloads the approximately 6 MB YOLOv8n model weights. (The pinned Torch release does not support Python 3.13.)
