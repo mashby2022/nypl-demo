@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "api",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": ["api.py"],
+      "port": 8000
+    },
+    {
+      "name": "dashboard",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": ["-m", "http.server", "5500"],
+      "port": 5500
+    },
+    {
+      "name": "web_ui",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": ["web_ui.py"],
+      "port": 7860
+    }
+  ]
+}
