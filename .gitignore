@@ -14,3 +14,4 @@ __pycache__/
 assets/outputs/
 telemetry_history.csv
 *.mov
+new_images/
